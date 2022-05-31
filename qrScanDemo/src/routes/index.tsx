@@ -6,12 +6,8 @@ import NotFound from '@/pages/NotFound';
 
 export default [
   {
-    path: '/',
+    path: '/*',
     element: <Layout />,
     children: [{ index: true, element: <Main /> }],
-  },
-  {
-    path: '/*',
-    element: <NotFound />,
-  },
+  }
 ] as RouteObject[];
